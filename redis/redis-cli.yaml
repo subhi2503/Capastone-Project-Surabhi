@@ -21,5 +21,7 @@ spec:
           image: 'redis:latest'
 		  command: ["/bin/sh","-c","sleep 100000"]
           imagePullPolicy: Always
+          ports:
+            - containerPort: 6379
       restartPolicy: Always
       
