@@ -1,0 +1,11 @@
+#Specify a base image
+FROM node:alpine
+
+#Install dependencies
+WORKDIR /home/ubuntu/task-resources/upg-loadme-app
+COPY ./ /home/ubuntu/task-resources/upg-loadme-app
+
+RUN npm install
+
+#Default command
+CMD ["node","server.js"]#Specify a base image
